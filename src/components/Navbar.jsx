@@ -1,8 +1,7 @@
-import { useContext } from 'react'
-import {AiOutlineClose , AiOutlineMenu} from 'react-icons/ai'
+import { useContext } from 'react';
+import {AiOutlineClose , AiOutlineMenu} from 'react-icons/ai';
 import NavbarContext from '../context/navbarContext';
 import  {NavLink} from 'react-router-dom';
-// import {AiOutlineShoppingCart} from 'react-icons/ai';
 
 
 export const Navbar = () => {
@@ -17,10 +16,14 @@ export const Navbar = () => {
   <h1 className='text-4xl font-Quick font-bold uppercase tracking-widest bg-gradient-to-bl from-[#ffb066]  to-[#F2BE22] text-transparent bg-clip-text m-5'><NavLink to='/'> Teracotta </NavLink></h1>
   <ul className='hidden md:flex items-center'>
         <li className='font-serif p-4 uppercase font-semibold text-white hover:text-[#F2BE22] duration-200' >
-       <NavLink to='/Shop'> Shop </NavLink>
+       <NavLink to='/Shop' className={({ isActive }) =>
+              isActive ? "text-[#F2BE22]" : ""
+            }> Shop </NavLink>
        </li>
         <li className='font-serif p-4 uppercase font-semibold text-white hover:text-[#F2BE22] duration-200 '>
-        <NavLink to='/Cart'> Cart </NavLink>
+        <NavLink to='/Cart'className={({ isActive }) =>
+              isActive ? "text-[#F2BE22]" : ""
+            }> Cart </NavLink>
         </li> 
         <li className='font-serif p-4 uppercase font-semibold text-white'>
         <NavLink to='/Email'> <button className='px-4 py-2 rounded-lg bg-[#F2BE22] hover:bg-[#ecce71] duration-200'> Email Us </button> </NavLink>
@@ -35,10 +38,14 @@ export const Navbar = () => {
     <h1 className='text-4xl w-full font-Quick uppercase tracking-widest font-bold m-7 bg-gradient-to-bl from-[#ffb066]  to-[#F2BE22] text-transparent bg-clip-text'><NavLink to='/'> Teracotta </NavLink></h1>
     <ul className='font-serif font-bold p-4 uppercase'>
     <li className='p-4 text-white font-bold hover:text-[#F2BE22] duration-200 border-b border-gray-600'>
-       <NavLink onClick={handleNav} to='/Shop'> Shop </NavLink>
+       <NavLink onClick={handleNav} to='/Shop'className={({ isActive }) =>
+              isActive ? "text-[#F2BE22]" : ""
+            }> Shop </NavLink>
         </li>
         <li className='p-4 text-white font-bold hover:text-[#F2BE22] duration-200 border-b border-gray-600'>
-        <NavLink onClick={handleNav} to='/Cart'> Cart </NavLink>
+        <NavLink onClick={handleNav} to='/Cart'className={({ isActive }) =>
+              isActive ? "text-[#F2BE22]" : ""
+            }> Cart </NavLink>
         </li>
         <li className='p-4'>
         <NavLink onClick={handleNav} to='/Email'> <button className='p-4 w-full rounded-lg bg-[#F2BE22] hover:bg-[#ecce71] duration-200'> Email us </button>  </NavLink>
