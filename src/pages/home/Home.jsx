@@ -36,7 +36,7 @@ export const Home = () => {
 
 
   <div className="">
-    <img className="w-full h-screen object-cover lg:object-left-bottom" src="https://images.unsplash.com/photo-1459156212016-c812468e2115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2010&q=80" alt="" />
+    <img className="w-full h-screen object-cover lg:object-left-bottom" src="https://images.unsplash.com/photo-1459156212016-c812468e2115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2010&q=80" alt="img.jpg" />
   </div>
        
     </div>
