@@ -8,8 +8,8 @@ export const Home = () => {
   return (
     <div className="w-full fixed" >
 
-    <div className="absolute w-full h-screen bg-white/25 ">
-      <h1 className=" text-3xl lg:text-4xl font-Quick font-extrabold text-center px-4 mt-64">So you want to be a <span className='text-[#faa352]'>PLANT PARENT</span>
+    <div className="absolute w-full h-screen bg-white/70 ">
+      <h1 className=" text-4xl lg:text-6xl font-Bebas font-extrabold text-center px-4 mt-64">So you want to be a <span className='text-[#faa352]'>PLANT PARENT</span>
       <span>
       <TypeAnimation
       sequence={[
@@ -30,7 +30,7 @@ export const Home = () => {
     />
       </span></h1>
       <div className='flex justify-center items-center mt-8'>
-      <button onClick={() => navigate('/shop')} className='text-xl p-3 rounded-3xl  bg-black text-white hover:text-black hover:bg-white duration-200'> Here`s where to start </button>
+      <button onClick={() => navigate('/shop')} className='text-xl px-3 py-1 rounded-3xl  bg-black text-white hover:text-black hover:bg-white duration-200'> Here`s where to start </button>
     </div>
     </div>
 

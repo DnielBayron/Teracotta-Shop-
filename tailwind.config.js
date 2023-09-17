@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         Nunito : ['Nunito Sans'],
-        Quick : ['Quicksand']
+        Quick : ['Quicksand'],
+        Bebas: ['Bebas Neue']
       }
     },
   },
