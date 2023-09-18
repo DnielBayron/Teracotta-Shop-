@@ -4,7 +4,7 @@ export const Email = () => {
   return (
     <div className="max-w-[1640px] h-screen flex mx-auto items-center justify-center">
 
-      <div className="border border-slate-400 shadow-2xl rounded-2xl w-[80%] md:w-[60%] p-3 md:p-6 mb-14 md:mb-28 font-Nunito font-bold bg-white/25">
+      <div className="border border-slate-400 shadow-2xl rounded-2xl w-[80%] md:w-[60%] p-3 md:p-6 mb-28 font-Nunito font-bold bg-white/25">
       <form action="https://getform.io/f/1a92f12a-3173-492f-99ee-d110d6f11e89" method="POST" encType="multipart/form-data">
       <div className="grid md:grid-cols-2 md:gap-6 ">
       <div className="flex flex-col">
